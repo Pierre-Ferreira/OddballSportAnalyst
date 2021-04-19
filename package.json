@@ -5,7 +5,7 @@
     "start": "meteor --settings settings.json"
   },
   "dependencies": {
-    "@babel/runtime": "^7.0.0-beta.42",
+    "@babel/runtime": "7.0.0-beta.55",
     "@vtex/react-csv-parse": "^2.0.0-beta.1",
     "atob": "^2.1.0",
     "axios": "^0.18.0",
@@ -45,6 +45,7 @@
   "devDependencies": {
     "@meteorjs/eslint-config-meteor": "^1.0.5",
     "babel-eslint": "^8.2.2",
+    "create-react-class": "^15.5.1",
     "eslint": "^4.19.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-import-resolver-meteor": "^0.4.0",

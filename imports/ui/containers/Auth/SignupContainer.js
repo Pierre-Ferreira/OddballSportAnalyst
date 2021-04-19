@@ -12,14 +12,19 @@ function mapStateToProps(state) {
   let introducerInfoStr = `${state.IntroducerInfo.firstName} ${state.IntroducerInfo.lastName}`;
   introducerInfoStr += state.IntroducerInfo.clcNo ? ` (${state.IntroducerInfo.clcNo})` : '';
   return {
-    introducerInfoStr: (introducerInfoStr.trim().length !== 0) ? introducerInfoStr : null,
-    introducerId: state.IntroducerInfo._id,
+    //TODO Fix the introducer fields to be correct again.
+    // introducerInfoStr: (introducerInfoStr.trim().length !== 0) ? introducerInfoStr : null,
+    // introducerId: state.IntroducerInfo._id,
+    introducerInfoStr: "DUMMY",
+    introducerId: "123456789123456789123456789",
     email: state.SignupInfo.email,
     username: state.SignupInfo.username,
     firstName: state.SignupInfo.firstName,
     lastName: state.SignupInfo.lastName,
     cellNo: state.SignupInfo.cellNo,
-    walletAddress: state.SignupInfo.walletAddress,
+    //TODO Fix the walletAddress field to be correct again.
+    //walletAddress: state.SignupInfo.walletAddress,
+    walletAddress: "987654321234567898765432123456789"
   };
 }
 

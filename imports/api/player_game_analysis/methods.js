@@ -56,7 +56,9 @@ Meteor.methods({
     }).gameStatus;
     console.log('gameSetupStatus:', gameSetupStatus)
     // Check if the player has tokens left.
-    const totalNoOfTokens = Meteor.users.findOne({ _id: Meteor.userId() }).totalNoOfTokens || 0;
+    //TODOS: Uncomment tokens.
+    // const totalNoOfTokens = Meteor.users.findOne({ _id: Meteor.userId() }).totalNoOfTokens || 0;
+    const totalNoOfTokens = "999"
     console.log('totalNoOfTokens:', totalNoOfTokens)
     // Check if there isn't already a GameAnalysis for this player.
     const playerGameAnalyisCount = PlayerGameAnalysis.find({
