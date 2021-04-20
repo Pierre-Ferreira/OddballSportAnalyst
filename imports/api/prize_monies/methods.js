@@ -9,7 +9,9 @@ Meteor.methods({
     if (!Meteor.userId()) {
       throw new Meteor.Error(403, 'PrizeMonies Error. User not logged in.');
     } else {
-      const noOfPlayersInfo =  PrizeMonies.findOne({ noOfPlayers });
+      //TODOS: Fix/Uncomment the prize monies.
+      //const noOfPlayersInfo =  PrizeMonies.findOne({ noOfPlayers });
+      const noOfPlayersInfo = 1000;
       console.log('noOfPlayersInfo:', noOfPlayersInfo)
       return noOfPlayersInfo;
     }
