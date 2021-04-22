@@ -345,7 +345,7 @@ export default class PlayerAnalysisEditorComp extends Component {
               <div className="modal-header">
                 <div className="text-center">Game Analysis Editor</div>
               </div>
-              <div className="col-md-12 center-block alert-area">
+              <div className="col-xs-12 center-block alert-area">
                 {(feedbackMessage) ?
                   <Alert bsStyle={feedbackMessageType}>
                     {feedbackMessage}
@@ -354,10 +354,10 @@ export default class PlayerAnalysisEditorComp extends Component {
               </div>
               <form
                 id="player-analysis-editor-form"
-                className="form col-md-12 center-block"
+                className="form col-xs-12 center-block"
                 onSubmit={this.handleSubmit}
               >
-              <div className="modal-body container">
+              <div className="modal-body col-md-12 container">
                 <div className="text-center">
                   <OverlayTrigger
                     trigger={['hover']}
@@ -371,156 +371,180 @@ export default class PlayerAnalysisEditorComp extends Component {
                   <div className="game-row2">{moment(gameDate).format('dddd, MMMM Do YYYY')} @ {gameKickoff}</div>
                   <div className="game-row2">{gameVenue}, {gameCity}</div>
                 </div>
-                <div className="section-row form-group-2 row justify-content-md-center">
-                  <div className="game-row5 col-md-5 text-center">{gameHostAlias}</div>
-                  <span className="game-vs  col-md-2 text-center">vs</span>
-                  <div className="game-row5 col-md-5 text-center">{gameVisitorAlias}</div>
+                <div className="section-row form-group-2 row justify-content-sm-center">
+                  <div className="game-row5 col-xs-5 text-center">{gameHostAlias}</div>
+                  <span className="game-vs  col-xs-2 text-center">vs</span>
+                  <div className="game-row5 col-xs-5 text-center">{gameVisitorAlias}</div>
                 </div>
-                <div className="section-row form-group-2 row justify-content-md-center">
-                  <div className="game-row4 col-md-3 text-center">{this.state.playerHostScore}</div>
-                  <div className="col-md-3 game-row6 text-center">Score</div>
-                  <div className="game-row4 col-md-3 text-center">{this.state.playerVisitorScore}</div>
+                <div className="section-row form-group-2 row justify-content-sm-center">
+                  <div className="game-row4 col-xs-4 text-center">{this.state.playerHostScore}</div>
+                  <div className="col-xs-4 game-row6 text-center">Score</div>
+                  <div className="game-row4 col-xs-4 text-center">{this.state.playerVisitorScore}</div>
                 </div>
-                <div className="section-row form-group row justify-content-md-center">
-                  <select
-                    name="form-field-name"
-                    id="game-host-team-tries"
-                    className="form-control input-lg col-md-2 select-dropdown-fields game-row1"
-                    value={this.state.playerHostTeamTries}
-                    onChange={this.handleHostTeamTriesChange}
-                    disabled={savedAndDisabled}
-                  >
-                    {noValuesArr.map(val => <option value={val}>{val}</option>)}
-                  </select>
-                  <div className="col-md-4 game-row1 text-center">Tries</div>
-                  <select
-                    name="form-field-name"
-                    id="game-visitor-team-tries"
-                    className="form-control input-lg col-md-2 select-dropdown-fields game-row1"
-                    value={this.state.playerVisitorTeamTries}
-                    onChange={this.handleVisitorTeamTriesChange}
-                    disabled={savedAndDisabled}
-                  >
-                    {noValuesArr.map(val => <option value={val}>{val}</option>)}
-                  </select>
+                <div className="section-row form-group row justify-content-sm-center">
+                  <div col-xs-4>
+                    <select
+                      name="form-field-name"
+                      id="game-host-team-tries"
+                      className="form-control input-lg select-dropdown-fields game-row1"
+                      value={this.state.playerHostTeamTries}
+                      onChange={this.handleHostTeamTriesChange}
+                      disabled={savedAndDisabled}
+                    >
+                      {noValuesArr.map(val => <option value={val}>{val}</option>)}
+                    </select>
+                  </div>
+                  <div className="col-xs-4 game-row1 text-center">Tries</div>
+                  <div col-xs-4>
+                    <select
+                      name="form-field-name"
+                      id="game-visitor-team-tries"
+                      className="form-control input-lg col-xs-6 select-dropdown-fields game-row1"
+                      value={this.state.playerVisitorTeamTries}
+                      onChange={this.handleVisitorTeamTriesChange}
+                      disabled={savedAndDisabled}
+                    >
+                      {noValuesArr.map(val => <option value={val}>{val}</option>)}
+                    </select>
+                  </div>
                 </div>
-                <div className="section-row form-group row justify-content-md-center">
-                  <select
-                    name="form-field-name"
-                    id="game-host-team-convs"
-                    className="form-control input-lg col-md-2 select-dropdown-fields game-row1"
-                    value={this.state.playerHostTeamConvs}
-                    onChange={this.handleHostTeamConvsChange}
-                    disabled={savedAndDisabled}
-                  >
-                    {hostConvsArr.map(val => <option value={val}>{val}</option>)}
-                  </select>
-                  <div className="col-md-4 game-row1 text-center">Conversions</div>
-                  <select
-                    name="form-field-name"
-                    id="game-visitor-team-convs"
-                    className="form-control input-lg col-md-2 select-dropdown-fields game-row1"
-                    value={this.state.playerVisitorTeamConvs}
-                    onChange={this.handleVisitorTeamConvsChange}
-                    disabled={savedAndDisabled}
-                  >
-                    {visitorConvsArr.map(val => <option value={val}>{val}</option>)}
-                  </select>
+                <div className="section-row form-group row justify-content-sm-center">
+                  <div col-xs-4>
+                    <select
+                      name="form-field-name"
+                      id="game-host-team-convs"
+                      className="form-control input-lg col-xs-2 select-dropdown-fields game-row1"
+                      value={this.state.playerHostTeamConvs}
+                      onChange={this.handleHostTeamConvsChange}
+                      disabled={savedAndDisabled}
+                    >
+                      {hostConvsArr.map(val => <option value={val}>{val}</option>)}
+                    </select>
+                  </div>
+                  <div className="col-xs-4 game-row1 text-center">Conversions</div>
+                  <div col-xs-4>
+                    <select
+                      name="form-field-name"
+                      id="game-visitor-team-convs"
+                      className="form-control input-lg col-xs-2 select-dropdown-fields game-row1"
+                      value={this.state.playerVisitorTeamConvs}
+                      onChange={this.handleVisitorTeamConvsChange}
+                      disabled={savedAndDisabled}
+                    >
+                      {visitorConvsArr.map(val => <option value={val}>{val}</option>)}
+                    </select>
+                  </div>
                 </div>
-                <div className="section-row form-group row justify-content-md-center">
-                  <select
-                    name="form-field-name"
-                    id="game-host-team-penalties"
-                    className="form-control input-lg col-md-2 select-dropdown-fields game-row1"
-                    value={this.state.playerHostTeamPenalties}
-                    onChange={this.handleHostTeamPenaltiesChange}
-                    disabled={savedAndDisabled}
-                  >
-                    {noValuesArr.map(val => <option value={val}>{val}</option>)}
-                  </select>
-                  <div className="col-md-4 game-row1 text-center">Penalty kicks</div>
-                  <select
-                    name="form-field-name"
-                    id="game-visitor-team-penalties"
-                    className="form-control input-lg col-md-2 select-dropdown-fields game-row1"
-                    value={this.state.playerVisitorTeamPenalties}
-                    onChange={this.handleVisitorTeamPenaltiesChange}
-                    disabled={savedAndDisabled}
-                  >
-                    {noValuesArr.map(val => <option value={val}>{val}</option>)}
-                  </select>
+                <div className="section-row form-group row justify-content-sm-center">
+                  <div col-xs-4>
+                    <select
+                      name="form-field-name"
+                      id="game-host-team-penalties"
+                      className="form-control input-lg col-xs-2 select-dropdown-fields game-row1"
+                      value={this.state.playerHostTeamPenalties}
+                      onChange={this.handleHostTeamPenaltiesChange}
+                      disabled={savedAndDisabled}
+                    >
+                      {noValuesArr.map(val => <option value={val}>{val}</option>)}
+                    </select>
+                  </div>
+                  <div className="col-xs-4 game-row1 text-center">Penalty kicks</div>
+                  <div col-xs-4>
+                    <select
+                      name="form-field-name"
+                      id="game-visitor-team-penalties"
+                      className="form-control input-lg col-xs-2 select-dropdown-fields game-row1"
+                      value={this.state.playerVisitorTeamPenalties}
+                      onChange={this.handleVisitorTeamPenaltiesChange}
+                      disabled={savedAndDisabled}
+                    >
+                      {noValuesArr.map(val => <option value={val}>{val}</option>)}
+                    </select>
+                  </div>
                 </div>
-                <div className="section-row form-group row justify-content-md-center">
-                  <select
-                    name="form-field-name"
-                    id="game-host-team-dropgoals"
-                    className="form-control input-lg col-md-2 select-dropdown-fields game-row1"
-                    value={this.state.playerHostTeamDropgoals}
-                    onChange={this.handleHostTeamDropgoalsChange}
-                    disabled={savedAndDisabled}
-                  >
-                    {noValuesArr.map(val => <option value={val}>{val}</option>)}
-                  </select>
-                  <div className="col-md-4 game-row1 text-center">Dropgoals</div>
-                  <select
-                    name="form-field-name"
-                    id="game-visitor-team-dropgoals"
-                    className="form-control input-lg col-md-2 select-dropdown-fields game-row1"
-                    value={this.state.playerVisitorTeamDropgoals}
-                    onChange={this.handleVisitorTeamDropgoalsChange}
-                    disabled={savedAndDisabled}
-                  >
-                    {noValuesArr.map(val => <option value={val}>{val}</option>)}
-                  </select>
+                <div className="section-row form-group row justify-content-sm-center">
+                  <div col-xs-4>
+                    <select
+                      name="form-field-name"
+                      id="game-host-team-dropgoals"
+                      className="form-control input-lg col-xs-2 select-dropdown-fields game-row1"
+                      value={this.state.playerHostTeamDropgoals}
+                      onChange={this.handleHostTeamDropgoalsChange}
+                      disabled={savedAndDisabled}
+                    >
+                      {noValuesArr.map(val => <option value={val}>{val}</option>)}
+                    </select>
+                  </div>
+                  <div className="col-xs-4 game-row1 text-center">Dropgoals</div>
+                  <div col-xs-4>
+                    <select
+                      name="form-field-name"
+                      id="game-visitor-team-dropgoals"
+                      className="form-control input-lg col-xs-2 select-dropdown-fields game-row1"
+                      value={this.state.playerVisitorTeamDropgoals}
+                      onChange={this.handleVisitorTeamDropgoalsChange}
+                      disabled={savedAndDisabled}
+                    >
+                      {noValuesArr.map(val => <option value={val}>{val}</option>)}
+                    </select>
+                  </div>
                 </div>
-                <div className="section-row form-group row justify-content-md-center">
-                  <select
-                    name="form-field-name"
-                    id="game-host-team-yellowcards"
-                    className="form-control input-lg col-md-2 select-dropdown-fields game-row1"
-                    value={this.state.playerHostTeamYellowCards}
-                    onChange={this.handleHostTeamYellowCardsChange}
-                    disabled={savedAndDisabled}
-                  >
-                    {noValuesArr.map(val => <option value={val}>{val}</option>)}
-                  </select>
-                  <div className="col-md-4 game-row1 text-center">Yellow cards</div>
-                  <select
-                    name="form-field-name"
-                    id="game-visitor-team-yellowcards"
-                    className="form-control input-lg col-md-2 select-dropdown-fields game-row1"
-                    value={this.state.playerVisitorTeamYellowCards}
-                    onChange={this.handleVisitorTeamYellowCardsChange}
-                    disabled={savedAndDisabled}
-                  >
-                    {noValuesArr.map(val => <option value={val}>{val}</option>)}
-                  </select>
+                <div className="section-row form-group row justify-content-sm-center">
+                  <div col-xs-4>
+                    <select
+                      name="form-field-name"
+                      id="game-host-team-yellowcards"
+                      className="form-control input-lg col-xs-2 select-dropdown-fields game-row1"
+                      value={this.state.playerHostTeamYellowCards}
+                      onChange={this.handleHostTeamYellowCardsChange}
+                      disabled={savedAndDisabled}
+                    >
+                      {noValuesArr.map(val => <option value={val}>{val}</option>)}
+                    </select>
+                  </div>
+                  <div className="col-xs-4 game-row1 text-center">Yellow cards</div>
+                  <div col-xs-4>  
+                    <select
+                      name="form-field-name"
+                      id="game-visitor-team-yellowcards"
+                      className="form-control input-lg col-xs-2 select-dropdown-fields game-row1"
+                      value={this.state.playerVisitorTeamYellowCards}
+                      onChange={this.handleVisitorTeamYellowCardsChange}
+                      disabled={savedAndDisabled}
+                    >
+                      {noValuesArr.map(val => <option value={val}>{val}</option>)}
+                    </select>
+                  </div>
                 </div>
-                <div className="section-row form-group row justify-content-md-center">
-                  <select
-                    name="form-field-name"
-                    id="game-host-team-redcards"
-                    className="form-control input-lg col-md-2 select-dropdown-fields game-row1"
-                    value={this.state.playerHostTeamRedCards}
-                    onChange={this.handleHostTeamRedCardsChange}
-                    disabled={savedAndDisabled}
-                  >
-                    {noValuesArr.map(val => <option value={val}>{val}</option>)}
-                  </select>
-                  <div className="col-md-4 game-row1 text-center">Red cards</div>
-                  <select
-                    name="form-field-name"
-                    id="game-visitor-team-redcards"
-                    className="form-control input-lg col-md-2 select-dropdown-fields game-row1"
-                    value={this.state.playerVisitorTeamRedCards}
-                    onChange={this.handleVisitorTeamRedCardsChange}
-                    disabled={savedAndDisabled}
-                  >
-                    {noValuesArr.map(val => <option value={val}>{val}</option>)}
-                  </select>
+                <div className="section-row form-group row justify-content-sm-center">
+                  <div col-xs-4> 
+                    <select
+                      name="form-field-name"
+                      id="game-host-team-redcards"
+                      className="form-control input-lg col-xs-2 select-dropdown-fields game-row1"
+                      value={this.state.playerHostTeamRedCards}
+                      onChange={this.handleHostTeamRedCardsChange}
+                      disabled={savedAndDisabled}
+                    >
+                      {noValuesArr.map(val => <option value={val}>{val}</option>)}
+                    </select>
+                  </div>
+                  <div className="col-xs-4 game-row1 text-center">Red cards</div>
+                  <div col-xs-4> 
+                    <select
+                      name="form-field-name"
+                      id="game-visitor-team-redcards"
+                      className="form-control input-lg col-xs-2 select-dropdown-fields game-row1"
+                      value={this.state.playerVisitorTeamRedCards}
+                      onChange={this.handleVisitorTeamRedCardsChange}
+                      disabled={savedAndDisabled}
+                    >
+                      {noValuesArr.map(val => <option value={val}>{val}</option>)}
+                    </select>
+                  </div>
                 </div>
                 <hr />
-                <div className="form-group btn-area text-center col-md-12">
+                <div className="form-group btn-area text-center col-xs-12">
                   <Button
                     className="save-btn"
                     bsStyle="primary"

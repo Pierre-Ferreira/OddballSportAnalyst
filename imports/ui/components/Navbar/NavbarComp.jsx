@@ -37,9 +37,9 @@ export default class NavbarComp extends Component {
             </Navbar.Brand>
           <Navbar.Toggle />
           </Navbar.Header>
-          {/* <Navbar.Collapse> */}
+          <Navbar.Collapse>
             { renderNavigationLinks(this.props.authenticated) }
-          {/* </Navbar.Collapse> */}
+          </Navbar.Collapse>
         </Navbar>
       </div>
     );

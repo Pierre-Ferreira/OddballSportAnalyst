@@ -60,7 +60,7 @@ export default class AuthenticatedNavigationLinksComp extends Component {
               <NavLink to="">History</NavLink>
             </MenuItem>
           </NavDropdown>
-          <NavDropdown eventKey={2} title={`Tokens (${this.props.totalNoOfTokens})`} id="basic-nav-dropdown">
+          {/* <NavDropdown eventKey={2} title={`Tokens (${this.props.totalNoOfTokens})`} id="basic-nav-dropdown">
             <MenuItem eventKey="1">
               <NavLink to="/get_tokens">Get tokens</NavLink>
             </MenuItem>
@@ -70,7 +70,7 @@ export default class AuthenticatedNavigationLinksComp extends Component {
             <MenuItem eventKey="3">
               <NavLink to="/admin/blockchain_api">Payouts</NavLink>
             </MenuItem>
-          </NavDropdown>
+          </NavDropdown> */}
           <NavDropdown eventKey={3} title={this.props.username} id="basic-nav-dropdown">
             <MenuItem eventKey="1">
               <NavLink to="/myteam">My Team</NavLink>
@@ -78,8 +78,11 @@ export default class AuthenticatedNavigationLinksComp extends Component {
             <MenuItem eventKey="2">
               <NavLink to="/settings">Settings</NavLink>
             </MenuItem>
-            <MenuItem eventKey="2">
+            <MenuItem eventKey="3">
               <NavLink to="/contact_us">Contact Us</NavLink>
+            </MenuItem>
+            <MenuItem eventKey="4">
+              <NavLink to="/admin/blockchain_api">Payouts</NavLink>
             </MenuItem>
             <MenuItem divider />
             <MenuItem eventKey="3">
