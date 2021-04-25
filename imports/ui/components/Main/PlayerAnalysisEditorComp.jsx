@@ -382,7 +382,7 @@ export default class PlayerAnalysisEditorComp extends Component {
                   <div className="game-row4 col-xs-4 text-center">{this.state.playerVisitorScore}</div>
                 </div>
                 <div className="section-row form-group row justify-content-sm-center">
-                  <div col-xs-4>
+                  <div className="col-xs-3">
                     <select
                       name="form-field-name"
                       id="game-host-team-tries"
@@ -394,8 +394,8 @@ export default class PlayerAnalysisEditorComp extends Component {
                       {noValuesArr.map(val => <option value={val}>{val}</option>)}
                     </select>
                   </div>
-                  <div className="col-xs-4 game-row1 text-center">Tries</div>
-                  <div col-xs-4>
+                  <div className="col-xs-6 game-row1 text-center">Tries</div>
+                  <div className="col-xs-3">
                     <select
                       name="form-field-name"
                       id="game-visitor-team-tries"
@@ -409,7 +409,7 @@ export default class PlayerAnalysisEditorComp extends Component {
                   </div>
                 </div>
                 <div className="section-row form-group row justify-content-sm-center">
-                  <div col-xs-4>
+                  <div className="col-xs-3">
                     <select
                       name="form-field-name"
                       id="game-host-team-convs"
@@ -421,8 +421,8 @@ export default class PlayerAnalysisEditorComp extends Component {
                       {hostConvsArr.map(val => <option value={val}>{val}</option>)}
                     </select>
                   </div>
-                  <div className="col-xs-4 game-row1 text-center">Conversions</div>
-                  <div col-xs-4>
+                  <div className="col-xs-6 game-row1 text-center">Conversions</div>
+                  <div className="col-xs-3">
                     <select
                       name="form-field-name"
                       id="game-visitor-team-convs"
@@ -436,7 +436,7 @@ export default class PlayerAnalysisEditorComp extends Component {
                   </div>
                 </div>
                 <div className="section-row form-group row justify-content-sm-center">
-                  <div col-xs-4>
+                  <div className="col-xs-3">
                     <select
                       name="form-field-name"
                       id="game-host-team-penalties"
@@ -448,8 +448,8 @@ export default class PlayerAnalysisEditorComp extends Component {
                       {noValuesArr.map(val => <option value={val}>{val}</option>)}
                     </select>
                   </div>
-                  <div className="col-xs-4 game-row1 text-center">Penalty kicks</div>
-                  <div col-xs-4>
+                  <div className="col-xs-6 game-row1 text-center">Penalty kicks</div>
+                  <div className="col-xs-3">
                     <select
                       name="form-field-name"
                       id="game-visitor-team-penalties"
@@ -463,7 +463,7 @@ export default class PlayerAnalysisEditorComp extends Component {
                   </div>
                 </div>
                 <div className="section-row form-group row justify-content-sm-center">
-                  <div col-xs-4>
+                  <div className="col-xs-3">
                     <select
                       name="form-field-name"
                       id="game-host-team-dropgoals"
@@ -475,8 +475,8 @@ export default class PlayerAnalysisEditorComp extends Component {
                       {noValuesArr.map(val => <option value={val}>{val}</option>)}
                     </select>
                   </div>
-                  <div className="col-xs-4 game-row1 text-center">Dropgoals</div>
-                  <div col-xs-4>
+                  <div className="col-xs-6 game-row1 text-center">Dropgoals</div>
+                  <div className="col-xs-3">
                     <select
                       name="form-field-name"
                       id="game-visitor-team-dropgoals"
@@ -490,7 +490,7 @@ export default class PlayerAnalysisEditorComp extends Component {
                   </div>
                 </div>
                 <div className="section-row form-group row justify-content-sm-center">
-                  <div col-xs-4>
+                  <div className="col-xs-3">
                     <select
                       name="form-field-name"
                       id="game-host-team-yellowcards"
@@ -502,8 +502,8 @@ export default class PlayerAnalysisEditorComp extends Component {
                       {noValuesArr.map(val => <option value={val}>{val}</option>)}
                     </select>
                   </div>
-                  <div className="col-xs-4 game-row1 text-center">Yellow cards</div>
-                  <div col-xs-4>  
+                  <div className="col-xs-6 game-row1 text-center">Yellow cards</div>
+                  <div className="col-xs-3">  
                     <select
                       name="form-field-name"
                       id="game-visitor-team-yellowcards"
@@ -517,7 +517,7 @@ export default class PlayerAnalysisEditorComp extends Component {
                   </div>
                 </div>
                 <div className="section-row form-group row justify-content-sm-center">
-                  <div col-xs-4> 
+                  <div className="col-xs-3"> 
                     <select
                       name="form-field-name"
                       id="game-host-team-redcards"
@@ -529,8 +529,8 @@ export default class PlayerAnalysisEditorComp extends Component {
                       {noValuesArr.map(val => <option value={val}>{val}</option>)}
                     </select>
                   </div>
-                  <div className="col-xs-4 game-row1 text-center">Red cards</div>
-                  <div col-xs-4> 
+                  <div className="col-xs-6 game-row1 text-center">Red cards</div>
+                  <div className="col-xs-3"> 
                     <select
                       name="form-field-name"
                       id="game-visitor-team-redcards"
