@@ -33,9 +33,9 @@ export default class LeaderBoardViewerComp extends Component {
             <div className="col-md-12 game-row8 text-center">Leaderboard</div>
           </div>
           <div className="heading-section-row row justify-content-md-center">
-            <div className="col-md-2 game-row9 text-center">Pos</div>
-            <div className="col-md-4 game-row9 text-center">Scores</div>
-            <div className="col-md-6 game-row9 text-center">Username</div>
+            <div className="col-xs-2 game-row9 text-center">Pos</div>
+            <div className="col-xs-4 game-row9 text-center">Scores</div>
+            <div className="col-xs-6 game-row9 text-center">Username</div>
           </div>
           <div className="scroll-area">
             {this.state.gameLeaderboard.map((playerGameAnalysis, i) => {
@@ -47,10 +47,10 @@ export default class LeaderBoardViewerComp extends Component {
               );
               return (
                 <div className={rowClass} key={playerGameAnalysis._id}>
-                  <div className="col-md-1 game-row6 text-center" />
-                  <div className="col-md-2 game-row6 text-center">{i + 1})</div>
-                  <div className="col-md-3 game-row6 text-center">{playerGameAnalysis.playerScore}</div>
-                  <div className="col-md-6 game-row6 text-center">{playerGameAnalysis.username}</div>
+                  <div className="col-xs-1 game-row6 text-center" />
+                  <div className="col-xs-2 game-row6 text-center">{i + 1})</div>
+                  <div className="col-xs-3 game-row6 text-center">{playerGameAnalysis.playerScore}</div>
+                  <div className="col-xs-6 game-row6 text-center">{playerGameAnalysis.username}</div>
                 </div>
               );
             })}

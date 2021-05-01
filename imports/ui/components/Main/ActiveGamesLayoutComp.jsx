@@ -30,7 +30,7 @@ export default class ActiveGamesLayoutComp extends Component {
                 {
                   ActiveGamesSetupList.map((gameSetup, i, arr) => {
                   panelsRowDisplay.push(
-                    <div className="col-xs-4">
+                    <div className="col-xs-12 col-md-6 col-lg-4">
                       <ActiveGamePanelContainer
                         {...this.props}
                         history={this.props.history}

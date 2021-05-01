@@ -35,7 +35,7 @@ export default class NavbarComp extends Component {
                   Oddball Sport Analyst
               </NavLink>
             </Navbar.Brand>
-          <Navbar.Toggle />
+          {/* <Navbar.Toggle /> */}
           </Navbar.Header>
           {/* <Navbar.Collapse> */}
             { renderNavigationLinks(this.props.authenticated) }

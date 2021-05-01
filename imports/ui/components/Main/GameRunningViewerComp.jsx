@@ -152,50 +152,50 @@ export default class GameRunningViewerComp extends Component {
             <div className="game-row2">{gameVenue}, {gameCity}</div>
           </div>
           <div className="section-row form-group-2 row justify-content-md-center">
-            <div className="game-row5 col-md-5 text-center">{gameHostAlias}</div>
-            <span className="game-vs  col-md-2 text-center">vs</span>
-            <div className="game-row5 col-md-5 text-center">{gameVisitorAlias}</div>
+            <div className="game-row5 col-xs-5 text-center">{gameHostAlias}</div>
+            <span className="game-vs  col-xs-2 text-center">vs</span>
+            <div className="game-row5 col-xs-5 text-center">{gameVisitorAlias}</div>
           </div>
           <div className="section-row form-group-2 row justify-content-md-center">
-            <div className="game-row4 col-md-3 text-center">{this.state.gameHostScore}</div>
-            <div className="col-md-4 game-row6 text-center">Score</div>
-            <div className="game-row4 col-md-3 text-center">{this.state.gameVisitorScore}</div>
+            <div className="game-row4 col-xs-4 text-center">{this.state.gameHostScore}</div>
+            <div className="col-xs-4 game-row6 text-center">Score</div>
+            <div className="game-row4 col-xs-4 text-center">{this.state.gameVisitorScore}</div>
           </div>
           <hr />
           <div className="section-row form-group row justify-content-md-center">
-            <div className="col-md-3 game-row7 text-center">{this.state.gameHostTeamTries}</div>
-            <div className="col-md-6 game-row1 text-center">Tries</div>
-            <div className="col-md-3 game-row7 text-center">{this.state.gameVisitorTeamTries}</div>
+            <div className="col-xs-3 game-row7 text-center">{this.state.gameHostTeamTries}</div>
+            <div className="col-xs-6 game-row1 text-center">Tries</div>
+            <div className="col-xs-3 game-row7 text-center">{this.state.gameVisitorTeamTries}</div>
           </div>
           <hr />
           <div className="section-row form-group row justify-content-md-center">
-            <div className="col-md-3 game-row7 text-center">{this.state.gameHostTeamConvs}</div>
-            <div className="col-md-6 game-row1 text-center">Conversions</div>
-            <div className="col-md-3 game-row7 text-center">{this.state.gameVisitorTeamConvs}</div>
+            <div className="col-xs-3 game-row7 text-center">{this.state.gameHostTeamConvs}</div>
+            <div className="col-xs-6 game-row1 text-center">Conversions</div>
+            <div className="col-xs-3 game-row7 text-center">{this.state.gameVisitorTeamConvs}</div>
           </div>
           <hr />
           <div className="section-row form-group row justify-content-md-center">
-            <div className="col-md-3 game-row7 text-center">{this.state.gameHostTeamPenalties}</div>
-            <div className="col-md-6 game-row1 text-center">Penalty kicks</div>
-            <div className="col-md-3 game-row7 text-center">{this.state.gameVisitorTeamPenalties}</div>
+            <div className="col-xs-3 game-row7 text-center">{this.state.gameHostTeamPenalties}</div>
+            <div className="col-xs-6 game-row1 text-center">Penalty kicks</div>
+            <div className="col-xs-3 game-row7 text-center">{this.state.gameVisitorTeamPenalties}</div>
           </div>
           <hr />
           <div className="section-row form-group row justify-content-md-center">
-            <div className="col-md-3 game-row7 text-center">{this.state.gameHostTeamDropgoals}</div>
-            <div className="col-md-6 game-row1 text-center">Dropgoals</div>
-            <div className="col-md-3 game-row7 text-center">{this.state.gameVisitorTeamDropgoals}</div>
+            <div className="col-xs-3 game-row7 text-center">{this.state.gameHostTeamDropgoals}</div>
+            <div className="col-xs-6 game-row1 text-center">Dropgoals</div>
+            <div className="col-xs-3 game-row7 text-center">{this.state.gameVisitorTeamDropgoals}</div>
           </div>
           <hr />
           <div className="section-row form-group row justify-content-md-center">
-            <div className="col-md-3 game-row7 text-center">{this.state.gameHostTeamYellowCards}</div>
-            <div className="col-md-6 game-row1 text-center">Yellow cards</div>
-            <div className="col-md-3 game-row7 text-center">{this.state.gameVisitorTeamYellowCards}</div>
+            <div className="col-xs-3 game-row7 text-center">{this.state.gameHostTeamYellowCards}</div>
+            <div className="col-xs-6 game-row1 text-center">Yellow cards</div>
+            <div className="col-xs-3 game-row7 text-center">{this.state.gameVisitorTeamYellowCards}</div>
           </div>
           <hr />
           <div className="section-row form-group row justify-content-md-center">
-            <div className="col-md-3 game-row7 text-center">{this.state.gameHostTeamRedCards}</div>
-            <div className="col-md-6 game-row1 text-center">Red cards</div>
-            <div className="col-md-3 game-row7 text-center">{this.state.gameVisitorTeamRedCards}</div>
+            <div className="col-xs-3 game-row7 text-center">{this.state.gameHostTeamRedCards}</div>
+            <div className="col-xs-6 game-row1 text-center">Red cards</div>
+            <div className="col-xs-3 game-row7 text-center">{this.state.gameVisitorTeamRedCards}</div>
           </div>
         </div>
       </div>

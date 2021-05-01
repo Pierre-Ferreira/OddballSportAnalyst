@@ -27,6 +27,8 @@ Accounts.validateLoginAttempt((options) => {
   if (options.user && options.user.emails[0] && options.user.emails[0].verified === true) {
     return true;
   } else {
-    throw new Meteor.Error('email-not-verified', 'You must verify your email address before you can log in. (Check SPAM folder)');
+    return true; //TODOS: Remove this line and enable email verification again.
+    //TODOS: uncomment the Meteor.Error for email verification.
+    //throw new Meteor.Error('email-not-verified', 'You must verify your email address before you can log in. (Check SPAM folder)');
   }
 });
