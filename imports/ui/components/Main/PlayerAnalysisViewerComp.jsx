@@ -111,9 +111,9 @@ export default class PlayerAnalysisViewerComp extends Component {
             <div className="game-row5 col-xs-5 text-center">{gameVisitorAlias}</div>
           </div>
           <div className="section-row form-group-2 row justify-content-md-center">
-            <div className="game-row4 col-xs-3 text-center">{this.state.playerHostScore}</div>
+            <div className="game-row4 col-xs-4 text-center">{this.state.playerHostScore}</div>
             <div className="col-xs-4 game-row6 text-center">Score</div>
-            <div className="game-row4 col-xs-3 text-center">{this.state.playerVisitorScore}</div>
+            <div className="game-row4 col-xs-4 text-center">{this.state.playerVisitorScore}</div>
           </div>
           <hr />
           <div className="section-row form-group row justify-content-md-center">
