@@ -355,6 +355,8 @@ export default class GameSetupEditorComp extends Component {
                         <option value="Blues">Blues</option>
                         <option value="Brumbies">Brumbies</option>
                         <option value="Bulls">Bulls</option>
+                        <option value="Blue Bulls">Blue Bulls</option>
+                        <option value="Cheetahs">Cheetahs</option>
                         <option value="Chiefs">Chiefs</option>
                         <option value="Crusaders">Crusaders</option>
                         <option value="Highlanders">Highlanders</option>
@@ -403,6 +405,8 @@ export default class GameSetupEditorComp extends Component {
                         <option value="Blues">Blues</option>
                         <option value="Brumbies">Brumbies</option>
                         <option value="Bulls">Bulls</option>
+                        <option value="Blue Bulls">Blue Bulls</option>
+                        <option value="Cheetahs">Cheetahs</option>
                         <option value="Chiefs">Chiefs</option>
                         <option value="Crusaders">Crusaders</option>
                         <option value="Highlanders">Highlanders</option>

@@ -32,7 +32,7 @@ export default class NavbarComp extends Component {
           <Navbar.Header>
             <Navbar.Brand >
               <NavLink to="/main/welcome">
-                  Oddball Sport Analyst
+                  Oddball Fantasy
               </NavLink>
             </Navbar.Brand>
           {/* <Navbar.Toggle /> */}
