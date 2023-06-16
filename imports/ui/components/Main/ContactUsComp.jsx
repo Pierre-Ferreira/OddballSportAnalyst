@@ -36,6 +36,13 @@ export default class ContactUsComp extends Component {
       feedbackMessage: 'Busy...',
       feedbackMessageType: 'success',
     });
+    Meteor.call('setUserRoles', (err, res) => {
+      if (err) {
+        console.log('ROLES UPDATE FAIL:', err);
+      } else {
+        console.log('ROLES UPDATED!:', res);
+      }
+    });
     Meteor.call(
       'contact_us_messages.create',
       this.state.category,
