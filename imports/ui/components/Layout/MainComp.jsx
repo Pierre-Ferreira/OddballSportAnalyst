@@ -15,7 +15,7 @@ import IntroducerSearchContainer from '../../containers/Auth/IntroducerSearchCon
 import blockchainAPIPaymentsContainer from '../../containers/Admin/blockchainAPIPaymentsContainer';
 import UserSettingsComp from '../Main/UserSettings/UserSettingsComp';
 import MyTeamComp from '../Main/MyTeamComp';
-import GameSetupEditorContainer from '../../containers/Admin/GameSetupEditorContainer';
+import GameSetupEditorContainer from '../../containers/Admin/gameSetupEditorContainer';
 import GameRunningEditorContainer from '../../containers/Main/GameRunningEditorContainer';
 // Auth Members components.
 import WelcomeContainer from '../../containers/Main/WelcomeContainer';

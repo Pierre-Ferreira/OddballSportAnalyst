@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Alert, Button } from 'react-bootstrap';
 import moment from 'moment/moment'
-import './GameSetupEditorComp.less';
+import './gameSetupEditorComp.less';
 
 export default class GameSetupEditorComp extends Component {
   constructor(props) {
